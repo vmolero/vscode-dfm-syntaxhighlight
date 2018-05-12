@@ -1,0 +1,26 @@
+{
+    "name": "dfm",
+    "displayName": "dfm",
+    "description": "Delphi Forms",
+    "version": "0.0.1",
+    "publisher": "vmolero",
+    "engines": {
+        "vscode": "^1.23.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "delphi",
+            "aliases": ["Delphi", "delphi"],
+            "extensions": [".dfm"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "delphi",
+            "scopeName": "source.dfm",
+            "path": "./syntaxes/delphi.tmLanguage.json"
+        }]
+    }
+}

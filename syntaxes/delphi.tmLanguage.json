@@ -1,0 +1,38 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Delphi",
+	"fileTypes": [
+		"source.dfm"
+	],
+	"firstLineMatch": "^object\\s+\\w{1}\\s*:\\s*\\w$",
+	"foldingStartMarker": "^object\\s+\\w{1}\\s*:\\s*\\w$",
+	"foldingStopMarker": "^end$",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.object.dfm",
+				"match": "\\b(object|end)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.delphi",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.delphi",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.dfm"
+}
