@@ -12,7 +12,7 @@
 			"include": "#keywords"
 		},
 		{
-			"include": "#strings"
+			"include": "#entities"
 		},
 		{
 			"include": "#constants"
@@ -25,24 +25,42 @@
 				"match": "\\b(object|end)\\b"
 			}]
 		},
-		"strings": {
-			"name": "string.quoted.single.dfm",
-			"begin": "'",
-			"end": "'",
+		"constants": {
 			"patterns": [
-				
+				{
+					"name": "constant.numeric.dfm",
+					"match": "\\W\\d+"
+				},
+				{
+					"name": "constant.language.dfm",
+					"match": "\\b([Tt]rue|[Ff]alse)\\b"
+				},
+				{
+					"name": "string.quoted.single.dfm",
+					"begin": "'",
+					"end": "'",
+					"patterns": [
+						{
+							"match": ".*"
+						}
+					]
+				}
 			]
 		},
-		"constants": {
-			"patterns": [{
-				"name": "constant.numeric.dfm",
-				"match": "\\W\\d+"
-			},
-			{
-				"name": "constant.language.dfm",
-				"match": "([Tt]rue|[Ff]alse)"
-			}
-		]
+		"entities": {
+			"patterns": [
+				{
+					"match": "(\\w+):\\s+(\\w+)",
+					"captures": {
+						"1": {
+							"name": "variable.parameter.dfm"
+						},
+						"2": {
+							"name": "entity.name.type.dfm"
+						}  
+					}
+				}
+			]
 		}
 	},
 	"scopeName": "source.dfm"
