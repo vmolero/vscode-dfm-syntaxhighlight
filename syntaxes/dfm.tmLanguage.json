@@ -29,7 +29,7 @@
 			"patterns": [
 				{
 					"name": "constant.numeric.dfm",
-					"match": "\\W\\d+"
+					"match": "\\b\\d+\\b"
 				},
 				{
 					"name": "constant.language.dfm",
@@ -50,7 +50,7 @@
 		"entities": {
 			"patterns": [
 				{
-					"match": "(\\w+):\\s+(\\w+)",
+					"match": "\\s+(\\w+)\\s*:\\s+(\\w+)",
 					"captures": {
 						"1": {
 							"name": "variable.parameter.dfm"
