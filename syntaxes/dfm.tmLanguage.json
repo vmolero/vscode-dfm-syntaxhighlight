@@ -41,7 +41,7 @@
 					"end": "'",
 					"patterns": [
 						{
-							"match": ".*"
+							"match": "\\b\\w+\\b"
 						}
 					]
 				}
