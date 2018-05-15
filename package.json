@@ -12,15 +12,15 @@
     ],
     "contributes": {
         "languages": [{
-            "id": "delphi",
-            "aliases": ["Delphi", "delphi"],
+            "id": "dfm",
+            "aliases": ["Delphi Forms", "delphi forms"],
             "extensions": [".dfm"],
             "configuration": "./language-configuration.json"
         }],
         "grammars": [{
-            "language": "delphi",
+            "language": "dfm",
             "scopeName": "source.dfm",
-            "path": "./syntaxes/delphi.tmLanguage.json"
+            "path": "./syntaxes/dfm.tmLanguage.json"
         }]
     }
 }
