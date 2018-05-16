@@ -4,8 +4,8 @@
 	"fileTypes": [
 		"source.dfm"
 	],
-	"firstLineMatch": "^object\\s+\\w{1}\\s*:\\s*\\w$",
-	"foldingStartMarker": "^object\\s+\\w{1}\\s*:\\s*\\w$",
+	"firstLineMatch": "^(inherited|object)\\s+\\w{1}\\s*:\\s*\\w$",
+	"foldingStartMarker": "^(inherited|object)\\s+\\w{1}\\s*:\\s*\\w$",
 	"foldingStopMarker": "^end$",
 	"patterns": [
 		{
@@ -22,7 +22,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.object.dfm",
-				"match": "\\b(object|end)\\b"
+				"match": "\\b(inherited|object|end)\\b"
 			}]
 		},
 		"constants": {
