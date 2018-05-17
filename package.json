@@ -1,7 +1,7 @@
 {
     "name": "dfm-vscode",
-    "displayName": "dfm",
-    "description": "Delphi Forms",
+    "displayName": "Delphi Forms",
+    "description": "Delphi Forms syntax highlight",
     "author": "Victor Molero",
     "version": "0.0.1",
     "publisher": "vmolero",
